@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <style>
+            h1
+            {
+                text-decoration:underline;
+            }
+            #faculty
+            {
+                border:5px solid black;
+                max-width:50%;
+                padding:10px;
+                position:relative;
+                left:40px;
+                top:130px;
+                display: inline-block;
+                
+
+            }
+            #student
+            {
+                border:5px solid black;
+                max-width:50%;
+                padding:10px;
+                position:relative;
+                left:170px;
+                top:130px;
+                display: inline-block;
+
+            }
+            #parent
+            {
+                border:5px solid black;
+                max-width:50%;
+                padding:10px;
+                position:relative;
+                left:280px;
+                top:130px;
+                display: inline-block;
+
+            }
+            #submit
+            {
+                text-align:center;
+                position:relative;
+                left:80px;
+                padding:5px;
+                font-weight:bold;
+            }
+            *
+            {
+                border-radius:20px;
+                padding:3px;
+                font-weight:bold;
+                
+            
+            }
+            body
+            {
+                background-color:red;
+            }
+            
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <div class="shadow p-3 mb-5 bg-body-tertiary rounded rounded-5" id="faculty">
+            <form method="POST" action="/faculty-login">
+                <h1><i>Faculty Login</i></h1>
+                <label for="name">username</label>
+                <input type="name" class="form-control" placeholder="Enter Username" id="name" name="username">
+                <br>
+                <label for="password">password</label>
+                <input type="password"  class="form-control" placeholder="Enter password" id="password" name="password">
+                <br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <div  class="shadow-lg p-3 mb-5 bg-body-tertiary rounded rounded-5" id="student">
+            <form method="POST" action="/student-login">
+                <h1><i>Student Login</i></h1>
+                <label for="name">username</label>
+                <input type="name" class="form-control" placeholder="Enter Username" id="name" name="username">
+                <br>
+                <label for="password">password</label>
+                <input type="password" placeholder="Enter password" class="form-control" id="password" name="password">
+                <br>
+                <input type="submit" id="submit">
+            </form>
+        </div>
+        <div  class="shadow-lg p-3 mb-5 bg-body-tertiary rounded rounded-5" id="parent">
+            <form method="POST" action="/parent-login">
+                <h1><i>Parent Login</i></h1>
+                <label for="name">username</label>
+                <input type="name" placeholder="Enter username" class="form-control"id="name" name="username">
+                <br>
+                <label for="password">password</label>
+                <input type="password"  placeholder="Enter password" class="form-control" id="password" name="password">
+                <br>
+                <input type="submit" id="submit">
+
+            </form>
+        </div>
+
+    </body>
+</html>
